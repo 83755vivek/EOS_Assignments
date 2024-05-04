@@ -1,0 +1,442 @@
+
+EOS Assignment-1
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+->man man
+->Command to get help about commands
+
+admin1@admin1:~/Desktop$ man man
+
+
+MAN(1)                        Manual pager utils                        MAN(1)
+
+NAME
+       man - an interface to the system reference manuals
+
+SYNOPSIS
+       man [man options] [[section] page ...] ...
+       man -k [apropos options] regexp ...
+       man -K [man options] [section] term ...
+       man -f [whatis options] page ...
+       man -l [man options] file ...
+       man -w|-W [man options] page ...
+
+DESCRIPTION
+       man  is  the system's manual pager.  Each page argument given to man is
+       normally the name of a program, utility or function.  The  manual  page
+       associated with each of these arguments is then found and displayed.  A
+       section, if provided, will direct man to look only in that  section  of
+       the  manual.   The  default action is to search in all of the available
+       sections following a pre-defined order (see DEFAULTS), and to show only
+       the first page found, even if page exists in several sections.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+->uname
+->Print System information     
+       
+admin1@admin1:~/Desktop$ uname
+Linux
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+->pwd
+->Print current directory
+
+admin1@admin1:~/Desktop$ pwd
+/home/admin1/Desktop
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+->hostname
+->Print IP address and hostname of the machine
+
+admin1@admin1:~/Desktop$ hostname
+admin1
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+->date
+->Find today’s date
+
+admin1@admin1:~/Desktop$ date
+Friday 03 May 2024 03:50:25 PM IST
+
+
+admin1@admin1:~/Desktop$ cal
+      May 2024        
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30 31
+
+
+admin1@admin1:~/Desktop$ ls
+'AI GIT'       Assignment5        C-All_assignments   CAssignments        'EOS Lab'          IOT_LABEXAM.zip      Mcpilabexam.zip     std.txt
+ ardinoco      Assignment6        car.c               classwork            fit              'Lab exam'            Practice            temperature_fitband
+ ass           Assignment7        car.out             Day1_Python_Assign  'Git Data'         Makefile            'Practice AI'        Vb
+ Assi3         Assignment8        cars.txt            dem1.c               IOT_Assignments   MCPI_Assembly_code   prep               'vivek ubuntu'
+ Assignment3   Assignments       'C assign'           dem1.out             IOT_LAB_AI_ML    'MCPI ASSIG GIT'     'Prep Assignments'  'Vivek work'
+ Assignment4   C-All-Assignment   c_assignments       EOS_Assignments      IOT_LABEXAM       MCPI_Assignments     S_assignments       vk
+ 
+ 
+ admin1@admin1:~/Desktop$ dir
+AI\ GIT      Assignment5       C-All_assignments  CAssignments	      EOS\ Lab	       IOT_LABEXAM.zip	   Mcpilabexam.zip    std.txt
+ardinoco     Assignment6       car.c		  classwork	      fit	       Lab\ exam	   Practice	      temperature_fitband
+ass	     Assignment7       car.out		  Day1_Python_Assign  Git\ Data        Makefile		   Practice\ AI       Vb
+Assi3	     Assignment8       cars.txt		  dem1.c	      IOT_Assignments  MCPI_Assembly_code  prep		      vivek\ ubuntu
+Assignment3  Assignments       C\ assign	  dem1.out	      IOT_LAB_AI_ML    MCPI\ ASSIG\ GIT    Prep\ Assignments  Vivek\ work
+Assignment4  C-All-Assignment  c_assignments	  EOS_Assignments     IOT_LABEXAM      MCPI_Assignments    S_assignments      vk
+
+
+admin1@admin1:~/Desktop$ cat > vivek.txt
+I am student of sunbeamadmin1@admin1:~/Desktop$ 
+admin1@admin1:~/Desktop$ 
+admin1@admin1:~/Desktop$ ls
+'AI GIT'       Assignment5        C-All_assignments   CAssignments        'EOS Lab'          IOT_LABEXAM.zip      Mcpilabexam.zip     std.txt               vk
+ ardinoco      Assignment6        car.c               classwork            fit              'Lab exam'            Practice            temperature_fitband
+ ass           Assignment7        car.out             Day1_Python_Assign  'Git Data'         Makefile            'Practice AI'        Vb
+ Assi3         Assignment8        cars.txt            dem1.c               IOT_Assignments   MCPI_Assembly_code   prep                vivek.txt
+ Assignment3   Assignments       'C assign'           dem1.out             IOT_LAB_AI_ML    'MCPI ASSIG GIT'     'Prep Assignments'  'vivek ubuntu'
+ Assignment4   C-All-Assignment   c_assignments       EOS_Assignments      IOT_LABEXAM       MCPI_Assignments     S_assignments      'Vivek work'
+ 
+ 
+ admin1@admin1:~/Desktop$ cat vivek.txt
+I am student of sunbeam
+
+
+admin1@admin1:~/Desktop$ cat vivek.txt
+I am student of sunbeamadmin1@admin1:~/Desktop$ cat >> vivek.txt
+My name is vivekadmin1@admin1:~/Desktop$ cat vivek.txt
+I am student of sunbeamMy name is vivek
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copy a file
+
+admin1@admin1:~/Desktop/EOS_Assignments/vk$ ls
+akash.txt  vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/vk$ cp akash.txt vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/vk$ ls
+akash.txt  vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/vk$ cat vivek.txt
+My name is akashadmin1@admin1:~/Desktop/EOS_Assignments/vk$ 
+admin1@admin1:~/Desktop/EOS_Assignments/vk$ cat akash.txt
+My name is akashadmin1@admin1:~/Desktop/EOS_Assignments/vk$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copy a directory
+
+admin1@admin1:~/Desktop/EOS_Assignments/Copy a directory$ ls
+akash  vivek
+admin1@admin1:~/Desktop/EOS_Assignments/Copy a directory$ cp -r akash vivek
+admin1@admin1:~/Desktop/EOS_Assignments/Copy a directory$ ls
+akash  vivek
+admin1@admin1:~/Desktop/EOS_Assignments/Copy a directory$ ls vivek
+akash  vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/Copy a directory$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Move the files
+
+admin1@admin1:~/Desktop/EOS_Assignments/mov the file$ ls
+file1  file2
+admin1@admin1:~/Desktop/EOS_Assignments/mov the file$ mv file1 file2
+admin1@admin1:~/Desktop/EOS_Assignments/mov the file$ ls
+file2
+admin1@admin1:~/Desktop/EOS_Assignments/mov the file$ ls file2
+demo2.txt  file1
+admin1@admin1:~/Desktop/EOS_Assignments/mov the file$ 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rename a file
+
+admin1@admin1:~/Desktop/EOS_Assignments/rename the file$ ls
+file1.sh  file2.sh  file2xt  new.sh
+admin1@admin1:~/Desktop/EOS_Assignments/rename the file$ mv new.sh vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/rename the file$ ls
+file1.sh  file2.sh  file2xt  vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/rename the file$ 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Print the file in reverse order, Reverse each line in the file
+
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ cat > file1.txt
+Vivek 
+Ramya
+Shubham
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ ls
+file1.txt
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ tac file1.txt
+Shubham
+Ramya
+Vivek
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ rev file1.txt
+keviV
+aymaR
+mahbuhS
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Count the words, characters and lines in a file
+
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ cat file1.txt
+Vivek
+Ramya
+Shubham
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$ wc file1.txt
+ 3  3 20 file1.txt
+admin1@admin1:~/Desktop/EOS_Assignments/reverse file$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Create directory
+
+admin1@admin1:~/Desktop/EOS_Assignments$ mkdir vivekmkdir
+admin1@admin1:~/Desktop/EOS_Assignments$ ls
+'Copy a directory'  'mov the file'   'rename the file'   vivekmkdir
+'copy text file'     OS_Assignment1  'reverse file'
+admin1@admin1:~/Desktop/EOS_Assignments$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Change current directory
+
+admin1@admin1:~/Desktop/EOS_Assignments$ cd
+admin1@admin1:~$ 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Remove a file, remove a directory ( with -R )
+
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$ ls
+ akash.txt  'copy text file'   vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$ rm -r "copy text file"
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$ ls
+akash.txt  vivek.txt
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$ rm -r "vivek.txt"
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$ ls
+akash.txt
+admin1@admin1:~/Desktop/EOS_Assignments/Remove a file, remove a directory$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+remove empty directory
+
+admin1@admin1:~/Desktop/EOS_Assignments/remove empty directory$ ls
+empty
+admin1@admin1:~/Desktop/EOS_Assignments/remove empty directory$ rm -r "empty"
+admin1@admin1:~/Desktop/EOS_Assignments/remove empty directory$ ls
+admin1@admin1:~/Desktop/EOS_Assignments/remove empty directory$
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ touch new
+admin1@admin1:~/Desktop/EOS_Assignments$ ls
+'Copy a directory'   OS_Assignment1                      'reverse file'
+'copy text file'    'Remove a file, remove a directory'   vivekmkdir
+'mov the file'      'remove empty directory'
+ new                'rename the file'
+ 
+ 
+ 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ cat > new
+My name is vivek
+i am student of DESDadmin1@admin1:~/Desktop/EOS_Assignments$ 
+admin1@admin1:~/Desktop/EOS_Assignments$ sort new
+i am student of DESD
+My name is vivek
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ cat > new
+My name is vivek
+i am student of DESD
+sunbeam puneadmin1@admin1:~/Desktop/EOS_Assignments$ sort new
+i am student of DESD
+My name is vivek
+sunbeam pune
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ cat > new.txt
+Hello, i am student at sunbeam.
+Hello, i am student at sunbeam.
+Sunbeam it park pune.
+Sunbeam it park pune.
+hinjewadi phase 2.
+hinjewadi phase 2.admin1@admin1:~/Desktop/EOS_Assignments$ 
+admin1@admin1:~/Desktop/EOS_Assignments$ uniq new.txt
+Hello, i am student at sunbeam.
+Sunbeam it park pune.
+hinjewadi phase 2.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ head -3 new.txt
+Hello, i am student at sunbeam.
+Hello, i am student at sunbeam.
+Sunbeam it park pune.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ head -4 new.txt
+Hello, i am student at sunbeam.
+Hello, i am student at sunbeam.
+Sunbeam it park pune.
+Sunbeam it park pune.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ factor 12
+12: 2 2 3
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ alias -p
+alias CD='cd Desktop'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ unalias CD
+admin1@admin1:~/Desktop/EOS_Assignments$ alias -p
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ echo *
+Copy a directory copy text file mov the file new new.txt OS_Assignment1 Remove a file, remove a directory remove empty directory rename the file reverse file vivekmkdir
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ ps
+    PID TTY          TIME CMD
+   2910 pts/1    00:00:00 bash
+   3485 pts/1    00:00:00 ps
+   
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+
+  admin1@admin1:~/Desktop/EOS_Assignments$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+admin1      3320    2169 14 23:51 ?        00:00:49 /opt/google/chrome/chrome --
+admin1      3356    2169  0 23:51 ?        00:00:00 /opt/google/chrome/chrome --
+admin1      3373    2169  1 23:51 ?        00:00:03 /opt/google/chrome/chrome --
+admin1      3388    2169  0 23:51 ?        00:00:00 /opt/google/chrome/chrome --
+admin1      3407    2169  0 23:51 ?        00:00:00 /opt/google/chrome/chrome --
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ sudo kill -9 3356
+[sudo] password for admin1:
+
+admin1      3320    2169 12 May04 ?        00:01:09 /opt/google/chrome/chrome --
+admin1      3373    2169  0 May04 ?        00:00:03 /opt/google/chrome/chrome --
+admin1      3388    2169  0 May04 ?        00:00:00 /opt/google/chrome/chrome --
+admin1      3407    2169  0 May04 ?        00:00:00 /opt/google/chrome/chrome --
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+admin1@admin1:~/Desktop/EOS_Assignments$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/admin1:@/tmp/.ICE-unix/1579,unix/admin1:/tmp/.ICE-unix/1579
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+DBUS_STARTER_BUS_TYPE=session
+PWD=/home/admin1/Desktop/EOS_Assignments
+LOGNAME=admin1
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=wayland
+SYSTEMD_EXEC_PID=1579
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.07C1M2
+HOME=/home/admin1
+USERNAME=admin1
+IM_CONFIG_PHASE=1
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+WAYLAND_DISPLAY=wayland-0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/7512a665_a851_4e3c_831a_d99319da34e9
+GNOME_SETUP_DISPLAY=:1
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=admin1
+GNOME_TERMINAL_SERVICE=:1.117
+DISPLAY=:0
+SHLVL=1
+QT_IM_MODULE=ibus
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=42ce29bf1c6914376912d48e66367554
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/:/home/admin1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=42ce29bf1c6914376912d48e66367554
+_=/usr/bin/env
+admin1@admin1:~/Desktop/EOS_Assignments$
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
