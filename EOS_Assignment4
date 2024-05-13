@@ -1,0 +1,242 @@
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+    1 .count the no. of words ,characters and lines from above 2 file.(man wc)ss
+
+admin1@admin1:~/Desktop/EOS Lab$ cat > data.txt
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ wc data.txt
+ 11  25 150 data.txt
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  2 . list the lines having word "files" (man grep)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+   3. list the lines having word "file" (man grep)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ grep -w "file" data.txt
+In Linux everything is file
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+   4.   list the lines which don't have word "files" (man grep)
+   
+   admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+   admin1@admin1:~/Desktop/EOS Lab$ grep -v "files" data.txt
+Linux is open source.
+
+In Linux everything is file
+
+
+
+
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+   5.  list the lines having word "have" . (man grep)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+    6.  list the lines starts with letter "f" (man grep)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+    7.  list the lines ends with "." (man grep)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ grep ".$" data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+    8.  list only first two lines.(man head)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ head -3 data.txt
+Linux is open source.
+
+In Linux everything is file
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+     9.  list only last three lines.(man tail)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ tail -5 data.txt 
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+    10.  list line no.3,4 and 5 . (man head and tail)
+
+admin1@admin1:~/Desktop/EOS Lab$ cat data.txt 
+Linux is open source.
+
+In Linux everything is file
+
+files have permissions.
+
+files have inode no.
+
+files have size.
+
+there are several types of files
+admin1@admin1:~/Desktop/EOS Lab$ head -n 9 data.txt | tail -n +5
+files have permissions.
+
+files have inode no.
+
+files have size.
+admin1@admin1:~/Desktop/EOS Lab$
+
+
+
+
+
+
+
+
+
+
+
+
+
